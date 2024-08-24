@@ -4,7 +4,6 @@ dotenvenc.config();
 import { ethers } from 'ethers';
 // Configuration details for CCIP
 import { getCCIPConfig } from '../config';
-// Helper methods for estimating intrinsic gas & creating transaction data.
 import { buildTransactionData, estimateIntrinsicGas } from './helper';
 
 // Test data
@@ -77,7 +76,3 @@ async function estimateGasAndIncreaseGasLimit() {
 
 // Call the `estimateGas` function and catch any errors.
 estimateGasAndIncreaseGasLimit().catch(console.error);
-
-// Follow this guideline to execute this script
-// npm install
-// npm run estimate
